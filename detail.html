@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스무 살의 첫 이력서 — ON:STAGE</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 헤더 ▸ index.html과 완전히 같습니다. 그쪽을 고치면 여기도 고치세요. -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">ON:STAGE</a>
+    <button type="button" class="menu-btn" id="menuBtn"
+            aria-expanded="false" aria-controls="gnb">메뉴</button>
+    <nav class="gnb" id="gnb" aria-label="주요 메뉴">
+      <a href="index.html">프로그램</a>
+      <a href="#">공간 안내</a>
+      <a href="#">신청 확인</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="detail">
+  <div class="wrap">
+
+    <!-- ══════════════════════════════════════════════════════════
+         [4주차] 상단 : 포스터(왼쪽) + 정보(오른쪽)
+         ─────────────────────────────────────────────────────────
+         style.css에 준비된 클래스
+            .detail-top  .detail-poster  .detail-info  .spec
+         ══════════════════════════════════════════════════════════ -->
+    <div class="detail-top">
+
+      <!-- 포스터 ▸ 완성본 제공 -->
+      <figure class="detail-poster">
+        <img id="detail-image" src="" alt="">
+      </figure>
+
+      <div class="detail-info">
+        <p id="detail-category" class="card-cat"></p>
+        <h1 id="detail-title"></h1>
+
+        <!-- ▼ 정보 목록 ▸ 두 줄만 제공. 나머지는 직접 채우세요.
+             <dl>은 '항목 - 값' 짝을 나타내는 태그입니다.
+             dt = 항목 이름, dd = 값 -->
+        <dl class="spec">
+          <div><dt>일시</dt><dd id="detail-date"></dd></div>
+          <div><dt>장소</dt><dd id="detail-place"></dd></div>
+          <div><dt>진행 시간</dt><dd id="detail-duration"></dd></div>
+          <div><dt>대상</dt><dd id="detail-target"></dd></div>
+          <div><dt>정원</dt><dd id="detail-capacity"></dd></div>
+          <div><dt>참가비</dt><dd id="detail-price"></dd></div>
+        </dl>
+        <a href="apply.html" class="btn btn--block">신청하기</a>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         [4주차] 하단 : 소개 글
+         ══════════════════════════════════════════════════════════ -->
+    <div class="detail-body">
+      <h2>프로그램 소개</h2>
+      <p id="detail-intro1"></p>
+      <p id="detail-intro2"></p>
+
+     <h2>신청 안내</h2>
+     <p id="detail-guide"></p>
+
+    </div>
+  </div>
+</main>
+
+
+
+
+<footer class="site-footer">
+  <div class="wrap">ON:STAGE · 수업 실습을 위한 가상 사이트입니다.</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/detail.js"></script>
+</body>
+</html>
